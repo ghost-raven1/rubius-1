@@ -1,3 +1,16 @@
+// Переменные
+
+// Лого
+$logo-color: #333333;
+
+// Cсылки
+$link-color: #333333;
+$link-color-hover: #00BF78;
+// Фон
+$bk-color-section: #ccc;
+$bk-color-header: #F8F6F7;
+
+
 /* Large Devices, Wide Screens */ 
 @media only screen and (max-width: 1280px) { 
 } 
@@ -6,6 +19,28 @@
 } 
 /* Small Devices, Tablets */ 
 @media only screen and (max-width: 768px) {
+  .header {
+    &__logo {
+      color: $logo-color;
+      font-size: 16px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+  }
+
+  .navigation {
+    &__link {
+      color: $link-color;
+      font-weight: 400;
+      font-size: 10px;
+    }
+    &__link:hover {
+      color: $link-color-hover;
+      font-weight: 400;
+      font-size: 10px;
+    }
+  }
+
   .header__girl {
     opacity: 0.6;
   }

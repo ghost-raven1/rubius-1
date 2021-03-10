@@ -1,21 +1,22 @@
 <template>
       <header class="header">
-      <div class="container">
+      <div class="container header__container">
 
         <div class="header__top">
           <a class="logo header__logo" href="/">Мир красоты</a>
 
           <nav class="navigation header__nav">
             <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link" href="#">Услуги и цены</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Мастера</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Наши работы</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#services">Услуги и цены</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#masters">Мастера</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#portfolio">Наши работы</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
             </ul>
           </nav>
 
           <div class="header__phone">
-            Номер телефона
+            <h4>8 (499) 686-17-62</h4>
+            <p>с 10.00 до 19.00 без выходных</p>
           </div>
         </div>
 

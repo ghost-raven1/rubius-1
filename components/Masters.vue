@@ -1,6 +1,7 @@
 <template>
     <section class="section">
         <div class="container">
+          <a name="masters"></a>
           <h2>Мастера</h2>
 
       <section class="section">
