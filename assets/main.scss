@@ -1,0 +1,242 @@
+// Переменные
+
+// Лого
+$logo-color: #333333;
+
+// Cсылки
+$link-color: #333333;
+$link-color-hover: #00BF78;
+// Фон
+$bk-color-section: #ccc;
+$bk-color-header: #F8F6F7;
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::placeholder {
+  color: grey;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+body {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
+}
+
+/* Navigation */
+.navigation {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  &__item:not(:last-child) {
+    margin-right: 28px;
+  }
+  &__link {
+    color: $link-color;
+    font-weight: 600;
+  }
+  &__link:hover {
+    color: $link-color-hover;
+    font-weight: 600;
+  }
+}
+
+.header {
+  background-color: $bk-color-header;
+  position: relative;
+  overflow: hidden;
+
+  & > .container {
+    position: relative;
+    padding: 30px 15px 130px;
+  }
+
+  &__top {
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__social {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__girl {
+    position: absolute;
+    right: 90px;
+    bottom: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: 0.3s opacity;
+  }
+
+  &__logo {
+    color: $logo-color;
+    font-size: 24px;
+    font-weight: 900;
+  }
+}
+
+.header-girl {
+  max-width: 524px;
+  width: 100%;
+}
+
+.header-girl:before {
+  content: '';
+  width: 472px;
+  height: 472px;
+  background-color: #FB9475;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -110px;
+  right: 0;
+  z-index: 0;
+}
+
+.header-girl img {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section__grey {
+  background-color: $bk-color-section;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-descr {
+  max-width: 568px;
+  width: 100%;
+}
+
+.about-video {
+  max-width: 442px;
+  width: 100%;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  margin-bottom: 30px;
+}
+
+.master-card__photo {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.master-card__photo:before,
+.master-card__photo:after {
+  opacity: 0;
+  transition: .15s opacity;
+  position: absolute;
+}
+
+.master-card__photo:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;  
+  z-index: 1;
+}
+
+.master-card__photo:hover:before {
+  opacity: 0.5;
+}
+
+.master-card__photo:after {
+  content: 'Записаться к мастеру';
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.master-card__photo:hover:after {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;  
+}
