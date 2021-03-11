@@ -16,6 +16,8 @@
 
      <Portfolio />
 
+     <BtnToTop />
+
      <Contacts />
 
     </main>
@@ -36,6 +38,7 @@ import Portfolio from '~/components/Portfolio';
 import Brands from '~/components/Brands';
 import Contacts from '~/components/Contacts';
 import Footer from '~/components/Footer';
+import BtnToTop from '~/components/BtnToTop';
 
 export default {
   components: {
@@ -49,6 +52,7 @@ export default {
       Brands,
       Contacts,
       Footer,
+      BtnToTop,
   }
 }
 </script>

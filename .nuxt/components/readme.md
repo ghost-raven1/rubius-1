@@ -9,6 +9,7 @@ You can directly use them in pages and other components without the need to impo
 - `<About>` | `<about>` (components/About.vue)
 - `<Advantages>` | `<advantages>` (components/Advantages.vue)
 - `<Brands>` | `<brands>` (components/Brands.vue)
+- `<BtnToTop>` | `<btn-to-top>` (components/BtnToTop.vue)
 - `<Contacts>` | `<contacts>` (components/Contacts.vue)
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
