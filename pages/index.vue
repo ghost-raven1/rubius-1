@@ -16,6 +16,8 @@
 
      <Portfolio />
 
+     <Brands />
+
      <BtnToTop />
 
      <Contacts />
