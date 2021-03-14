@@ -24,7 +24,9 @@
           <div class="hero header__hero">
             <h1 class="hero__title">Создай свой образ вместе с нами</h1>
             <p class="hero__subtitle">Идеальный образ за 60 минут</p>
-            <button class="btn btn_large hero__btn">Записаться онлайн</button>
+            <div class="padding-top20px">
+              <button class="btn btn__large hero__btn">Записаться онлайн</button>
+            </div>
           </div>
           <client-only>
           <ul class="social header__social">

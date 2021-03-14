@@ -9,7 +9,7 @@
 
         <!-- Добавить стили для навигации в футере -->
         <div class="col-sm">
-          <nav class="navigation header__nav">
+          <nav class="navigation footer__nav">
             <ul class="navigation__list">
               <li class="navigation__item"><a class="navigation__link" href="#services">Услуги и цены</a></li>
               <li class="navigation__item"><a class="navigation__link" href="#masters">Мастера</a></li>

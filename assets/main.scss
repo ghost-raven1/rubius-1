@@ -6,12 +6,18 @@ $logo-color: #333333;
 // Cсылки
 $link-color: #333333;
 $link-color-hover: #00BF78;
+
 // Фон
 $bk-color-section: #ccc;
 $bk-color-header: #F8F6F7;
+
 // Кнопки
 $btn-bk-color:#FB9475;
+$btn-bk-color-hover:#fab29c;
 $btn-color:white;
+
+// Тени
+$shadow:rgb(151, 151, 151);
 
 
 html {
@@ -51,6 +57,10 @@ h2 {
   margin: 0;
 }
 
+.h-center {
+  text-align: center;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -80,10 +90,12 @@ h2 {
   &__link {
     color: $link-color;
     font-weight: 600;
+    transition: 0.5s;
   }
   &__link:hover {
     color: $link-color-hover;
     font-weight: 600;
+    transition: 0.5s;
   }
 }
 
@@ -137,9 +149,11 @@ h2 {
 }
 .social_img {
   filter: grayscale(100%);
+  transition: 0.5s;
 }
 .social_img:hover {
   filter: grayscale(0%);
+  transition: 0.5s;
 }
 
 
@@ -235,6 +249,7 @@ h2 {
 
 .master-card__photo:hover:before {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .master-card__photo:after {
@@ -264,17 +279,24 @@ a {
 .btn {
   align-items: center;
   font-size: 12px;
-}
 
-.btn_large {
-  border-radius: 24px;
-  background: $btn-bk-color;
-  color: $btn-color;
-  font-size: 14px;
-  padding: 15px 30px;
-  height: 48px;
-  left: 163px;
-  top: 17px;
+  &__large {
+    border-radius: 24px;
+    background: $btn-bk-color;
+    color: $btn-color;
+    font-size: 14px;
+    padding: 15px 30px;
+    height: 48px;
+    left: 163px;
+    top: 17px;
+    transition: 0.5s;
+  }
+
+  &__large:hover {
+    background-color: $btn-bk-color-hover;
+    filter: drop-shadow(1px 1px 1px $shadow);
+    transition: 0.5s;
+  }
 }
 
 .btn__totop {
@@ -287,19 +309,26 @@ a {
   background-color: gray;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 20px;
   border-radius: 50%;
-  font-size: 18px; 
+  font-size: 18px;
+  transition: 0.5s;
 }
 
 .btn__totop:hover {
-  background: #abacac;
+  background: #c3c4c4;
+  transition: 0.5s;
+  filter: drop-shadow(1px 1px 1px $shadow); 
 }
 
 .footer {
   padding-top: 20px;
   height: 78px;
   background-color: rgb(228, 228, 228);
+}
+
+.footer__nav {
+  margin-bottom: 30px;
 }
 
 // Табы
@@ -323,17 +352,22 @@ a {
   text-align: center;
   flex-shrink: 0;
   flex-grow: 1;
+  transition: 0.5s;
 }
 
 .tabs__link_active {
   color: $link-color-hover;
   text-decoration: underline;
   cursor: pointer;
+  filter: drop-shadow(1px 1px 1px $shadow);
+  transition: 0.5s;
 }
 
 .tabs__link:not(.tabs__link_active):hover,
 .tabs__link:not(.tabs__link_active):focus {
   color: $link-color-hover;
+  filter: drop-shadow(1px 1px 1px $shadow);
+  transition: 0.5s;
 }
 
 .tabs__content {
@@ -346,4 +380,26 @@ a {
 
 .tabs__pane_show {
   display: block;
+}
+
+.padding-top20px {
+  padding-top: 20px;
+}
+
+.brands{
+  justify-content: center;
+  margin-top: 42px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+
+  &__image {
+  transition: 0.5s;
+  margin: auto;
+  }
+
+  &__image:hover {
+    filter: drop-shadow(2px 3px 5px rgb(102, 102, 102));
+    transition: 0.5s;
+  }
 }
