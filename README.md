@@ -1,5 +1,7 @@
 # rubius-1
 
+## Адрес сайта: https://worldofbeauty.netlify.app/
+
 ## Build Setup
 
 ```bash
