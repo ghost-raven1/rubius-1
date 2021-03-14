@@ -31,5 +31,14 @@
   },
   "Services": {
     "description": "Auto imported from components/Services.vue"
+  },
+  "SocialBtnsInst": {
+    "description": "Auto imported from components/socialBtns/Inst.vue"
+  },
+  "SocialBtnsVk": {
+    "description": "Auto imported from components/socialBtns/Vk.vue"
+  },
+  "SocialBtnsYoutube": {
+    "description": "Auto imported from components/socialBtns/Youtube.vue"
   }
 }
