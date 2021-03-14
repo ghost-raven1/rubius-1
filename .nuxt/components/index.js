@@ -9,6 +9,9 @@ export { default as Masters } from '../../components/Masters.vue'
 export { default as Portfolio } from '../../components/Portfolio.vue'
 export { default as Prices } from '../../components/Prices.vue'
 export { default as Services } from '../../components/Services.vue'
+export { default as SocialBtnsInst } from '../../components/socialBtns/Inst.vue'
+export { default as SocialBtnsVk } from '../../components/socialBtns/Vk.vue'
+export { default as SocialBtnsYoutube } from '../../components/socialBtns/Youtube.vue'
 
 export const LazyAbout = import('../../components/About.vue' /* webpackChunkName: "components/about" */).then(c => c.default || c)
 export const LazyAdvantages = import('../../components/Advantages.vue' /* webpackChunkName: "components/advantages" */).then(c => c.default || c)
@@ -21,3 +24,6 @@ export const LazyMasters = import('../../components/Masters.vue' /* webpackChunk
 export const LazyPortfolio = import('../../components/Portfolio.vue' /* webpackChunkName: "components/portfolio" */).then(c => c.default || c)
 export const LazyPrices = import('../../components/Prices.vue' /* webpackChunkName: "components/prices" */).then(c => c.default || c)
 export const LazyServices = import('../../components/Services.vue' /* webpackChunkName: "components/services" */).then(c => c.default || c)
+export const LazySocialBtnsInst = import('../../components/socialBtns/Inst.vue' /* webpackChunkName: "components/social-btns-inst" */).then(c => c.default || c)
+export const LazySocialBtnsVk = import('../../components/socialBtns/Vk.vue' /* webpackChunkName: "components/social-btns-vk" */).then(c => c.default || c)
+export const LazySocialBtnsYoutube = import('../../components/socialBtns/Youtube.vue' /* webpackChunkName: "components/social-btns-youtube" */).then(c => c.default || c)

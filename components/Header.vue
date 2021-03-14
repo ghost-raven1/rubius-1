@@ -26,12 +26,13 @@
             <p class="hero__subtitle">Идеальный образ за 60 минут</p>
             <button class="btn btn_large hero__btn">Записаться онлайн</button>
           </div>
-
+          <client-only>
           <ul class="social header__social">
-            <li class="social__item"><a href="">1</a></li>
-            <li class="social__item"><a href="">2</a></li>
-            <li class="social__item"><a href="">3</a></li>
+            <li class="social__item"><a href=""><YoutubeBtn /></a></li>
+            <li class="social__item"><a href=""><VKBtn /></a></li>
+            <li class="social__item"><a href=""><InstBtn /></a></li>
           </ul>
+          </client-only>
         </div>
 
         <div class="header__girl header-girl">
@@ -42,7 +43,15 @@
 </template>
 
 <script>
+import YoutubeBtn from '~/components/socialBtns/Youtube';
+import VKBtn from '~/components/socialBtns/Vk';
+import InstBtn from '~/components/socialBtns/Inst';
 export default {
+  components: {
+    YoutubeBtn,
+    VKBtn,
+    InstBtn,
+  }
 
 }
 </script>

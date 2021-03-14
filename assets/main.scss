@@ -132,6 +132,17 @@ h2 {
   }
 }
 
+.social__item {
+  list-style-type: none;
+}
+.social_img {
+  filter: grayscale(100%);
+}
+.social_img:hover {
+  filter: grayscale(0%);
+}
+
+
 .header-girl {
   max-width: 524px;
   width: 100%;
@@ -286,5 +297,53 @@ a {
 }
 
 .footer {
+  padding-top: 20px;
+  height: 78px;
   background-color: rgb(228, 228, 228);
+}
+
+// Табы
+.tabs {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+}
+
+.tabs__link {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: $link-color;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.tabs__link_active {
+  color: $link-color-hover;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+  color: $link-color-hover;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
 }
