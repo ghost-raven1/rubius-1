@@ -1,4 +1,4 @@
-# rubius-1
+# Мир красоты
 
 ## Адрес сайта: https://worldofbeauty.netlify.app/
 
