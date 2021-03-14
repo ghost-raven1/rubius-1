@@ -3,8 +3,7 @@
      <Header />
 
      <main class="main">
-
-     <About />
+    <About />
 
      <Advantages />
 
@@ -56,6 +55,7 @@ export default {
       Footer,
       BtnToTop,
   }
+  
 }
 </script>
 
