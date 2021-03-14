@@ -1,0 +1,35 @@
+{
+  "About": {
+    "description": "Auto imported from components/About.vue"
+  },
+  "Advantages": {
+    "description": "Auto imported from components/Advantages.vue"
+  },
+  "Brands": {
+    "description": "Auto imported from components/Brands.vue"
+  },
+  "BtnToTop": {
+    "description": "Auto imported from components/BtnToTop.vue"
+  },
+  "Contacts": {
+    "description": "Auto imported from components/Contacts.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Masters": {
+    "description": "Auto imported from components/Masters.vue"
+  },
+  "Portfolio": {
+    "description": "Auto imported from components/Portfolio.vue"
+  },
+  "Prices": {
+    "description": "Auto imported from components/Prices.vue"
+  },
+  "Services": {
+    "description": "Auto imported from components/Services.vue"
+  }
+}
