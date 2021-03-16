@@ -1,0 +1,17 @@
+.brands {
+    justify-content: center;
+    margin-top: 42px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+  
+    &__image {
+    transition: 0.5s;
+    margin: auto;
+    }
+  
+    &__image:hover {
+      filter: drop-shadow(2px 3px 5px rgb(102, 102, 102));
+      transition: 0.5s;
+    }
+  }

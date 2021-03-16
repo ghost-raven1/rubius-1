@@ -12,6 +12,26 @@ import '../assets/main.scss'
 
 import '../assets/_media.scss'
 
+import '../assets/_forms.scss'
+
+import '../assets/_navs.scss'
+
+import '../assets/_tabs.scss'
+
+import '../assets/_socials.scss'
+
+import '../assets/_brands.scss'
+
+import '../assets/_header.scss'
+
+import '../assets/_about.scss'
+
+import '../assets/_masters.scss'
+
+import '../assets/_advantages.scss'
+
+import '../assets/_prices.scss'
+
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }

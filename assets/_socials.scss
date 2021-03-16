@@ -1,0 +1,21 @@
+.social {
+  &__item {
+    list-style-type: none;
+  };
+
+  &_img {
+    filter: grayscale(100%);
+    transition: 0.5s;
+  };
+
+  &_img:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+  };
+
+  &_wrapper {
+    padding-top: 10px;
+    width:30%;
+  }
+
+}

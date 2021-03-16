@@ -1,0 +1,63 @@
+// Переменные
+
+// Cсылки
+$link-color: #333333;
+$link-color-hover: #00BF78;
+
+// Тени
+$shadow:rgb(151, 151, 151);
+
+
+.tabs {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tabs__nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .tabs__link {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: $link-color;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    transition: 0.5s;
+  }
+  
+  .tabs__link_active {
+    color: $link-color-hover;
+    cursor: pointer;
+    color: $link-color-hover;
+    border-bottom: 2px solid $link-color-hover;
+    transition: 0.5s;
+  }
+  
+  .tabs__link:not(.tabs__link_active):focus {
+    color: $link-color-hover;
+    border-bottom: 2px solid $link-color-hover;
+    transition: 0.5s;
+  }
+
+  .tabs__link:not(.tabs__link_active):hover {
+    color: $link-color-hover;
+    transition: 0.5s;
+  }
+  
+  .tabs__content {
+    padding: 1rem;
+  }
+  
+  .tabs__pane {
+    display: none;
+  }
+  
+  .tabs__pane_show {
+    display: block;
+  }

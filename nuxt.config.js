@@ -31,12 +31,23 @@ export default {
     '~/assets/normalize.css', 
     '~/assets/main.scss',
     '~/assets/_media.scss',
+    '~/assets/_forms.scss',
+    '~/assets/_navs.scss',
+    '~/assets/_tabs.scss',
+    '~/assets/_socials.scss',
+    '~/assets/_brands.scss',
+    '~/assets/_header.scss',
+    '~/assets/_about.scss',
+    '~/assets/_masters.scss',
+    '~/assets/_advantages.scss',
+    '~/assets/_prices.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/vue-lazysizes.client.js',
-    { src: '~/plugins/tabs.js', mode: 'client' }
+    { src: '~/plugins/tabs.js', mode: 'client' },
+    { src: '~/plugins/contactForm.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

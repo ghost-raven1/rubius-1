@@ -12,6 +12,7 @@ const components = {
   Portfolio: () => import('../../components/Portfolio.vue' /* webpackChunkName: "components/portfolio" */).then(c => c.default || c),
   Prices: () => import('../../components/Prices.vue' /* webpackChunkName: "components/prices" */).then(c => c.default || c),
   Services: () => import('../../components/Services.vue' /* webpackChunkName: "components/services" */).then(c => c.default || c),
+  FormsContactForm: () => import('../../components/forms/ContactForm.vue' /* webpackChunkName: "components/forms-contact-form" */).then(c => c.default || c),
   SocialBtnsInst: () => import('../../components/socialBtns/Inst.vue' /* webpackChunkName: "components/social-btns-inst" */).then(c => c.default || c),
   SocialBtnsVk: () => import('../../components/socialBtns/Vk.vue' /* webpackChunkName: "components/social-btns-vk" */).then(c => c.default || c),
   SocialBtnsYoutube: () => import('../../components/socialBtns/Youtube.vue' /* webpackChunkName: "components/social-btns-youtube" */).then(c => c.default || c)

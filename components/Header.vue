@@ -14,9 +14,11 @@
             </ul>
           </nav>
 
-          <div class="header__phone">
-            <h4>8 (499) 686-17-62</h4>
-            <p>с 10.00 до 19.00 без выходных</p>
+          <div class="header__phone_wrapper">
+            <p class="header__phone">
+              <a class="link" href="tel:+7 (499) 686-17-62">+7 (499) 686-17-62</a>
+            </p>
+            <p class="header__uptime">с 10.00 до 19.00 без выходных</p>
           </div>
         </div>
 
@@ -37,8 +39,8 @@
           </client-only>
         </div>
 
-        <div class="header__girl header-girl">
-          <img class="header-girl__img" src="https://competent-mclean-4c8788.netlify.app/img/header-bg.png" alt="">
+        <div class="header__girl">
+          <img class="header__girl_img" src="/logo/header-bg.png" alt="Мир красоты">
         </div>
       </div>
     </header>

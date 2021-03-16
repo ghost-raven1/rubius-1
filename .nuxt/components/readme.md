@@ -17,6 +17,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Portfolio>` | `<portfolio>` (components/Portfolio.vue)
 - `<Prices>` | `<prices>` (components/Prices.vue)
 - `<Services>` | `<services>` (components/Services.vue)
+- `<FormsContactForm>` | `<forms-contact-form>` (components/forms/ContactForm.vue)
 - `<SocialBtnsInst>` | `<social-btns-inst>` (components/socialBtns/Inst.vue)
 - `<SocialBtnsVk>` | `<social-btns-vk>` (components/socialBtns/Vk.vue)
 - `<SocialBtnsYoutube>` | `<social-btns-youtube>` (components/socialBtns/Youtube.vue)

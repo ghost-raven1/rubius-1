@@ -1,0 +1,81 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__subtitle_wrapper {
+        padding-top: 32px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    &__text_wrapper {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &__photo {
+        height: 265px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    &__photo_wrapper {
+        width:100%;
+        padding-left: 126px;
+    }
+
+    &__photo:before {
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #000;  
+        z-index: 1;
+    }
+
+    &__photo:hover:before {
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+
+    &__photo:after {
+        content: 'Короткое видео о нас';
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 120px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 2;
+    }
+
+    &__photo:hover:after {
+        opacity: 1;
+    }
+}
+
+.about__photo:before,
+.about__photo:after {
+        opacity: 0;
+        transition: .15s opacity;
+        position: absolute;
+    }

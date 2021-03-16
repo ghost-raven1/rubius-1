@@ -1,0 +1,29 @@
+// Переменные
+
+// Cсылки
+$link-color: #333333;
+$link-color-hover: #00BF78;
+
+.navigation {
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    &__item:not(:last-child) {
+      margin-right: 28px;
+    }
+    &__link {
+      color: $link-color;
+      font-weight: 500;
+      font-size: 14px;
+      transition: 0.5s;
+    }
+    &__link:hover {
+      color: $link-color-hover;
+      font-weight: 500;
+      transition: 0.5s;
+    }
+  }

@@ -2,7 +2,7 @@
     <section class="section">
         <div class="container">
           <a id="masters"></a>
-          <h2>Мастера</h2>
+          <h2 class="section__header">Мастера</h2>
 
       <section class="section">
         <div class="container">

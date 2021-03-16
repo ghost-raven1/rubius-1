@@ -32,6 +32,9 @@
   "Services": {
     "description": "Auto imported from components/Services.vue"
   },
+  "FormsContactForm": {
+    "description": "Auto imported from components/forms/ContactForm.vue"
+  },
   "SocialBtnsInst": {
     "description": "Auto imported from components/socialBtns/Inst.vue"
   },
