@@ -6,8 +6,6 @@
         <p class="sText">© 2020 «Море красоты»</p>
         <a class="link sText" href="#">Политика конфиденциальности</a>
         </div>
-
-        <!-- Добавить стили для навигации в футере -->
         <div class="col-sm">
           <nav class="navigation footer__nav">
             <ul class="navigation__list sText">

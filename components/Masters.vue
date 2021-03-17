@@ -1,8 +1,9 @@
 <template>
-    <section class="section">
+    <section class="section gray_bg">
         <div class="container">
           <a id="masters"></a>
           <h2 class="section__header">Мастера</h2>
+          <p>Дружная команда настоящих профессионалов</p>
 
       <section class="section">
         <div class="container">
