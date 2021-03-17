@@ -16,9 +16,10 @@ import nuxt_plugin_plugin_2c3b34cd from 'nuxt_plugin_plugin_2c3b34cd' // Source:
 import nuxt_plugin_workbox_3490d882 from 'nuxt_plugin_workbox_3490d882' // Source: ./workbox.js (mode: 'client')
 import nuxt_plugin_metaplugin_2a46a85c from 'nuxt_plugin_metaplugin_2a46a85c' // Source: ./pwa/meta.plugin.js (mode: 'all')
 import nuxt_plugin_iconplugin_20f75d74 from 'nuxt_plugin_iconplugin_20f75d74' // Source: ./pwa/icon.plugin.js (mode: 'all')
-import nuxt_plugin_vuelazysizesclient_c533fa02 from 'nuxt_plugin_vuelazysizesclient_c533fa02' // Source: ../plugins/vue-lazysizes.client.js (mode: 'client')
 import nuxt_plugin_tabs_eb7bbcfa from 'nuxt_plugin_tabs_eb7bbcfa' // Source: ../plugins/tabs.js (mode: 'client')
 import nuxt_plugin_contactForm_32a3ab69 from 'nuxt_plugin_contactForm_32a3ab69' // Source: ../plugins/contactForm.js (mode: 'client')
+import nuxt_plugin_vuecarousel_0d4d0f1e from 'nuxt_plugin_vuecarousel_0d4d0f1e' // Source: ../plugins/vue-carousel (mode: 'client')
+import nuxt_plugin_jqueryfancybox_3048d19c from 'nuxt_plugin_jqueryfancybox_3048d19c' // Source: ../plugins/jquery-fancybox.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -194,16 +195,20 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_iconplugin_20f75d74(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_vuelazysizesclient_c533fa02 === 'function') {
-    await nuxt_plugin_vuelazysizesclient_c533fa02(app.context, inject)
-  }
-
   if (process.client && typeof nuxt_plugin_tabs_eb7bbcfa === 'function') {
     await nuxt_plugin_tabs_eb7bbcfa(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_contactForm_32a3ab69 === 'function') {
     await nuxt_plugin_contactForm_32a3ab69(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuecarousel_0d4d0f1e === 'function') {
+    await nuxt_plugin_vuecarousel_0d4d0f1e(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_jqueryfancybox_3048d19c === 'function') {
+    await nuxt_plugin_jqueryfancybox_3048d19c(app.context, inject)
   }
 
   // Lock enablePreview in context

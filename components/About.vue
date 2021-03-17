@@ -15,7 +15,9 @@
               </div>
             <div class="col">
               <div class="about__photo_wrapper">
-                <div class="about__photo" style="background-image: url(/about_video_bg.png);"></div>
+                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                  <div class="about__photo" style="background-image: url(/about_video_bg.png);"></div>
+                </a>
               </div>
             </div>
           </div>

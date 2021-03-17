@@ -32,6 +32,8 @@ import '../assets/_advantages.scss'
 
 import '../assets/_prices.scss'
 
+import '../assets/fancybox.css'
+
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
